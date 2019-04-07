@@ -1,0 +1,12 @@
+<div id="board-board">
+  <div class="board-row" *ngFor="let col of coords">
+    <div class="board-column" *ngFor="let item of col">
+      <div class="board-letterholder" *ngIf="board[item[0]][item[1]]; else elseblock">
+        {{ board[item[0]][item[1]] }}
+      </div>
+      <ng-template #elseblock>
+        <button (click)="onClick(item)"></button>
+      </ng-template>
+    </div>
+  </div>
+</div>

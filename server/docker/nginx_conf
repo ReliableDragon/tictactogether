@@ -54,8 +54,8 @@ http {
         }
 
         # serve static files
-        location ~ ^/(images|javascript|js|css|flash|media|static)/  {
-          root    /app/angular;
+        location ~ ^/(images|javascript|js|css|flash|media|static|angular)/  {
+          root    /app/client;
           expires 30d;
         }
 

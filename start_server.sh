@@ -1,0 +1,1 @@
+docker run -dit -p 4000:80 -v /Users/gabeleonard/Documents/GitHub/tictactogether/server/flask:/app/flask -v /Users/gabeleonard/Documents/GitHub/tictactogether/angular/dist/kingdom-game:/app/client/angular --name server ttt:latest
